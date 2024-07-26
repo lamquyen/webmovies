@@ -1,0 +1,162 @@
+.app {
+  background-color: #282828;
+  padding: 20px 30px;
+}
+
+.header {
+  margin-left: -82px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  background-color: #282828;
+}
+
+
+
+.header h1 {
+  margin: 0;
+  color: white;
+}
+
+.header a {
+  margin-right: 20px;
+  color: #868686;
+  text-decoration: none;
+}
+
+.header input {
+  border: none;
+  height: 20px;
+  padding: 5px;
+  border-radius: 20px;
+  width: 300px;
+  color: #868686;
+  background-color: #374151;
+
+}
+
+.content {
+  background-color: #282828;
+  margin: 0 0 0 20px;
+}
+
+.content h2 {
+  color: white;
+}
+
+.content p {
+  color: #868686;
+}
+
+main {
+  padding: 20px;
+}
+
+
+.banner {
+  background-image: 'weatherwithyou.png';
+  position: relative;
+  height: 500px;
+  background-size: cover;
+
+  background-position: center;
+  border-radius: 10px;
+  overflow: hidden;
+
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 60%;
+  background: linear-gradient(to right, #282828, rgba(0, 0, 0, 0));
+  /* background: rgba(0, 0, 0, 0.5); */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.banner-overlay h2 {
+  margin: 0 0 10px 0;
+  font-size: -webkit-xxx-large;
+}
+
+.banner-overlay p {
+  margin: 0;
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.movie-item {
+  cursor: pointer;
+  position: relative;
+}
+
+.image-container {
+  position: relative;
+}
+
+.movie-item img {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: linear-gradient(to top, #282828, rgba(0, 0, 0, 0));
+  border-radius: 0 0 10px 10px;
+  z-index: 2;
+}
+
+.movie-item-text {
+  text-align: center;
+  margin-top: 5px;
+
+}
+
+.movie-item p {
+  margin: 10px 0 0 0;
+  display: block;
+  font-weight: bold;
+  font-size: 12px;
+  color: white;
+  width: 150px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.movie-item-text span {
+  color: #d4c5c5;
+  position: absolute;
+  bottom: 42px;
+  left: 40px;
+  font-weight: 500;
+  z-index: 3;
+}
+
+.newmovie {
+  color: white;
+}
+
+.banner-overlay p {
+  margin-bottom: -24%;
+}
